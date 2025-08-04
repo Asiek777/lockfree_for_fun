@@ -99,6 +99,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="fixedSizeTests.cpp" />
     <ClCompile Include="multiThread.cpp" />
     <ClCompile Include="singleThread.cpp" />
     <ClCompile Include="pch.cpp">
