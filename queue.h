@@ -57,7 +57,7 @@ inline void Queue<T>::resize()
 	size *= 2;
 	buffer.resize(size);
 	int firstPartLen = back % (oldSize);
-	std::memcpy(buffer.data() + oldSize, buffer.data(), firstPartLen);
+	std::memcpy(buffer.data() + oldSize, buffer.data(), firstPartLen * sizeof(T));
 	back = front + oldSize;
 }
 
